@@ -10,7 +10,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Musica" customModuleProvider="target">
             <connections>
-                <outlet property="captionedSong" destination="ALP-oM-c5y" id="Dza-SH-yZS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,41 +17,8 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="isg-Rd-8kf">
-                    <rect key="frame" x="0.0" y="59" width="393" height="793"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="¿Qué quieres escuchar?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chU-9O-PUQ">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="gxQ-rk-KTk" userLabel="contenedor">
-                            <rect key="frame" x="0.0" y="793" width="393" height="0.0"/>
-                            <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ALP-oM-c5y" customClass="CaptionedMusicView" customModule="Musica" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="0.0"/>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                </view>
-                            </subviews>
-                        </stackView>
-                    </subviews>
-                    <constraints>
-                        <constraint firstAttribute="trailing" secondItem="chU-9O-PUQ" secondAttribute="trailing" id="1lT-vz-MSk"/>
-                        <constraint firstItem="chU-9O-PUQ" firstAttribute="top" secondItem="isg-Rd-8kf" secondAttribute="top" id="he7-Ea-6t9"/>
-                        <constraint firstItem="chU-9O-PUQ" firstAttribute="leading" secondItem="isg-Rd-8kf" secondAttribute="leading" id="s8U-DZ-Hlu"/>
-                    </constraints>
-                </stackView>
-            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <constraints>
-                <constraint firstItem="isg-Rd-8kf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Puf-sR-ckI"/>
-                <constraint firstItem="isg-Rd-8kf" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="QgQ-f7-nhG"/>
-                <constraint firstAttribute="bottom" secondItem="isg-Rd-8kf" secondAttribute="bottom" id="e86-82-Idp"/>
-                <constraint firstItem="isg-Rd-8kf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="k7W-6e-1b7"/>
-            </constraints>
             <point key="canvasLocation" x="96.946564885496173" y="-11.267605633802818"/>
         </view>
     </objects>
