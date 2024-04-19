@@ -22,6 +22,9 @@
 		9E51A02F2BD25CF900D2B259 /* MusicType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E51A02E2BD25CF900D2B259 /* MusicType.swift */; };
 		9E51A0332BD25D7D00D2B259 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E51A0312BD25D7D00D2B259 /* MusicViewController.swift */; };
 		9E51A0342BD25D7D00D2B259 /* MusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E51A0322BD25D7D00D2B259 /* MusicViewController.xib */; };
+		9ED2D9EB2BD2D1F8002B2C30 /* agarrala.MP3 in Resources */ = {isa = PBXBuildFile; fileRef = 9ED2D9EA2BD2D1F8002B2C30 /* agarrala.MP3 */; };
+		9ED2D9ED2BD2D2DC002B2C30 /* morena.MP3 in Resources */ = {isa = PBXBuildFile; fileRef = 9ED2D9EC2BD2D2DB002B2C30 /* morena.MP3 */; };
+		9ED2D9EF2BD2D4C2002B2C30 /* rehuso.MP3 in Resources */ = {isa = PBXBuildFile; fileRef = 9ED2D9EE2BD2D4C2002B2C30 /* rehuso.MP3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		9E51A02E2BD25CF900D2B259 /* MusicType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicType.swift; sourceTree = "<group>"; };
 		9E51A0312BD25D7D00D2B259 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		9E51A0322BD25D7D00D2B259 /* MusicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicViewController.xib; sourceTree = "<group>"; };
+		9ED2D9EA2BD2D1F8002B2C30 /* agarrala.MP3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = agarrala.MP3; sourceTree = "<group>"; };
+		9ED2D9EC2BD2D2DB002B2C30 /* morena.MP3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = morena.MP3; sourceTree = "<group>"; };
+		9ED2D9EE2BD2D4C2002B2C30 /* rehuso.MP3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rehuso.MP3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,9 @@
 				9E51A02E2BD25CF900D2B259 /* MusicType.swift */,
 				9E0791EB2BD267D3003D93EA /* morire.MP3 */,
 				9E0791ED2BD267E1003D93EA /* ellaSeFue.MP3 */,
+				9ED2D9EA2BD2D1F8002B2C30 /* agarrala.MP3 */,
+				9ED2D9EC2BD2D2DB002B2C30 /* morena.MP3 */,
+				9ED2D9EE2BD2D4C2002B2C30 /* rehuso.MP3 */,
 			);
 			path = Musica;
 			sourceTree = "<group>";
@@ -180,7 +189,10 @@
 				9E51A0172BD259DD00D2B259 /* Assets.xcassets in Resources */,
 				9E0791EC2BD267D3003D93EA /* morire.MP3 in Resources */,
 				9E0791E82BD262D6003D93EA /* CaptionedMusicView.xib in Resources */,
+				9ED2D9EF2BD2D4C2002B2C30 /* rehuso.MP3 in Resources */,
 				9E51A01A2BD259DD00D2B259 /* Base in Resources */,
+				9ED2D9ED2BD2D2DC002B2C30 /* morena.MP3 in Resources */,
+				9ED2D9EB2BD2D1F8002B2C30 /* agarrala.MP3 in Resources */,
 				9E0791EE2BD267E1003D93EA /* ellaSeFue.MP3 in Resources */,
 				9E51A0232BD25A2400D2B259 /* HomeViewController.xib in Resources */,
 			);

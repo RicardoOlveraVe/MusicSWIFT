@@ -63,10 +63,20 @@ class MusicViewController: UIViewController {
     }
     
     @IBAction func nextClick() {
-        if musicType == .morire{
-            musicType = .ellaSeFue
-        }else {
+        play.stop()
+        if musicType == .ellaSeFue{
+            musicType = .agarrala
+        }else if musicType == .agarrala{
+            musicType = .morena
+        }else if musicType == .morena{
+            musicType = .rehuso
+        }else if musicType == .rehuso{
             musicType = .morire
+        }else{
+            musicType = .ellaSeFue
         }
+        captionedMusic()
+        play.play()
     }
+    
 }
