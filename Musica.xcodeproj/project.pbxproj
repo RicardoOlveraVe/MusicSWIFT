@@ -7,23 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E0791E72BD262D6003D93EA /* CaptionedMusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0791E52BD262D6003D93EA /* CaptionedMusicView.swift */; };
+		9E0791E82BD262D6003D93EA /* CaptionedMusicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E0791E62BD262D6003D93EA /* CaptionedMusicView.xib */; };
+		9E0791EA2BD2636E003D93EA /* CaptionedMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0791E92BD2636E003D93EA /* CaptionedMusic.swift */; };
+		9E0791EC2BD267D3003D93EA /* morire.MP3 in Resources */ = {isa = PBXBuildFile; fileRef = 9E0791EB2BD267D3003D93EA /* morire.MP3 */; };
+		9E0791EE2BD267E1003D93EA /* ellaSeFue.MP3 in Resources */ = {isa = PBXBuildFile; fileRef = 9E0791ED2BD267E1003D93EA /* ellaSeFue.MP3 */; };
 		9E51A00E2BD259DC00D2B259 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E51A00D2BD259DC00D2B259 /* AppDelegate.swift */; };
 		9E51A0102BD259DC00D2B259 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E51A00F2BD259DC00D2B259 /* SceneDelegate.swift */; };
-		9E51A0122BD259DC00D2B259 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E51A0112BD259DC00D2B259 /* ViewController.swift */; };
-		9E51A0152BD259DC00D2B259 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 9E51A0142BD259DC00D2B259 /* Base */; };
 		9E51A0172BD259DD00D2B259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E51A0162BD259DD00D2B259 /* Assets.xcassets */; };
 		9E51A01A2BD259DD00D2B259 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 9E51A0192BD259DD00D2B259 /* Base */; };
+		9E51A0232BD25A2400D2B259 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E51A0222BD25A2400D2B259 /* HomeViewController.xib */; };
+		9E51A0252BD25A3200D2B259 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E51A0242BD25A3200D2B259 /* HomeViewController.swift */; };
+		9E51A02D2BD25CEA00D2B259 /* SongType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E51A02C2BD25CEA00D2B259 /* SongType.swift */; };
+		9E51A02F2BD25CF900D2B259 /* MusicType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E51A02E2BD25CF900D2B259 /* MusicType.swift */; };
+		9E51A0332BD25D7D00D2B259 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E51A0312BD25D7D00D2B259 /* MusicViewController.swift */; };
+		9E51A0342BD25D7D00D2B259 /* MusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E51A0322BD25D7D00D2B259 /* MusicViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E0791E52BD262D6003D93EA /* CaptionedMusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionedMusicView.swift; sourceTree = "<group>"; };
+		9E0791E62BD262D6003D93EA /* CaptionedMusicView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaptionedMusicView.xib; sourceTree = "<group>"; };
+		9E0791E92BD2636E003D93EA /* CaptionedMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionedMusic.swift; sourceTree = "<group>"; };
+		9E0791EB2BD267D3003D93EA /* morire.MP3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = morire.MP3; sourceTree = "<group>"; };
+		9E0791ED2BD267E1003D93EA /* ellaSeFue.MP3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ellaSeFue.MP3; sourceTree = "<group>"; };
 		9E51A00A2BD259DC00D2B259 /* Musica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E51A00D2BD259DC00D2B259 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E51A00F2BD259DC00D2B259 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9E51A0112BD259DC00D2B259 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9E51A0142BD259DC00D2B259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E51A0162BD259DD00D2B259 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E51A0192BD259DD00D2B259 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E51A01B2BD259DD00D2B259 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E51A0222BD25A2400D2B259 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		9E51A0242BD25A3200D2B259 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9E51A02C2BD25CEA00D2B259 /* SongType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongType.swift; sourceTree = "<group>"; };
+		9E51A02E2BD25CF900D2B259 /* MusicType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicType.swift; sourceTree = "<group>"; };
+		9E51A0312BD25D7D00D2B259 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		9E51A0322BD25D7D00D2B259 /* MusicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +55,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E0791E22BD2622C003D93EA /* CaptionedMusicView */ = {
+			isa = PBXGroup;
+			children = (
+				9E0791E52BD262D6003D93EA /* CaptionedMusicView.swift */,
+				9E0791E62BD262D6003D93EA /* CaptionedMusicView.xib */,
+				9E0791E92BD2636E003D93EA /* CaptionedMusic.swift */,
+			);
+			path = CaptionedMusicView;
+			sourceTree = "<group>";
+		};
 		9E51A0012BD259DB00D2B259 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +84,38 @@
 		9E51A00C2BD259DC00D2B259 /* Musica */ = {
 			isa = PBXGroup;
 			children = (
+				9E0791E22BD2622C003D93EA /* CaptionedMusicView */,
+				9E51A0302BD25D6600D2B259 /* MusicViewController */,
+				9E51A0212BD25A0D00D2B259 /* Home */,
 				9E51A00D2BD259DC00D2B259 /* AppDelegate.swift */,
 				9E51A00F2BD259DC00D2B259 /* SceneDelegate.swift */,
-				9E51A0112BD259DC00D2B259 /* ViewController.swift */,
-				9E51A0132BD259DC00D2B259 /* Main.storyboard */,
 				9E51A0162BD259DD00D2B259 /* Assets.xcassets */,
 				9E51A0182BD259DD00D2B259 /* LaunchScreen.storyboard */,
 				9E51A01B2BD259DD00D2B259 /* Info.plist */,
+				9E51A02C2BD25CEA00D2B259 /* SongType.swift */,
+				9E51A02E2BD25CF900D2B259 /* MusicType.swift */,
+				9E0791EB2BD267D3003D93EA /* morire.MP3 */,
+				9E0791ED2BD267E1003D93EA /* ellaSeFue.MP3 */,
 			);
 			path = Musica;
+			sourceTree = "<group>";
+		};
+		9E51A0212BD25A0D00D2B259 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9E51A0222BD25A2400D2B259 /* HomeViewController.xib */,
+				9E51A0242BD25A3200D2B259 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9E51A0302BD25D6600D2B259 /* MusicViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9E51A0312BD25D7D00D2B259 /* MusicViewController.swift */,
+				9E51A0322BD25D7D00D2B259 /* MusicViewController.xib */,
+			);
+			name = MusicViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +176,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E51A0342BD25D7D00D2B259 /* MusicViewController.xib in Resources */,
 				9E51A0172BD259DD00D2B259 /* Assets.xcassets in Resources */,
+				9E0791EC2BD267D3003D93EA /* morire.MP3 in Resources */,
+				9E0791E82BD262D6003D93EA /* CaptionedMusicView.xib in Resources */,
 				9E51A01A2BD259DD00D2B259 /* Base in Resources */,
-				9E51A0152BD259DC00D2B259 /* Base in Resources */,
+				9E0791EE2BD267E1003D93EA /* ellaSeFue.MP3 in Resources */,
+				9E51A0232BD25A2400D2B259 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +193,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E51A0122BD259DC00D2B259 /* ViewController.swift in Sources */,
+				9E51A02F2BD25CF900D2B259 /* MusicType.swift in Sources */,
 				9E51A00E2BD259DC00D2B259 /* AppDelegate.swift in Sources */,
 				9E51A0102BD259DC00D2B259 /* SceneDelegate.swift in Sources */,
+				9E0791E72BD262D6003D93EA /* CaptionedMusicView.swift in Sources */,
+				9E51A0332BD25D7D00D2B259 /* MusicViewController.swift in Sources */,
+				9E51A0252BD25A3200D2B259 /* HomeViewController.swift in Sources */,
+				9E51A02D2BD25CEA00D2B259 /* SongType.swift in Sources */,
+				9E0791EA2BD2636E003D93EA /* CaptionedMusic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9E51A0132BD259DC00D2B259 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9E51A0142BD259DC00D2B259 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9E51A0182BD259DD00D2B259 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,9 +349,8 @@
 				INFOPLIST_FILE = Musica/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +358,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = richi.Musica;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -325,9 +380,8 @@
 				INFOPLIST_FILE = Musica/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +389,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = richi.Musica;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
