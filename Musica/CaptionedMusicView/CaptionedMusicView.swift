@@ -16,6 +16,7 @@ class CaptionedMusicView: UIView {
     
     var captionedMusic: CaptionedMusic! {
         didSet {
+            play.stop()
             image.image = captionedMusic.image
             caption.text = captionedMusic.name
             artist.text = captionedMusic.artist
@@ -29,6 +30,7 @@ class CaptionedMusicView: UIView {
     var showCaption: Bool = true {
         didSet {
             caption.isHidden = !showCaption
+
         }
     }
 
@@ -40,11 +42,10 @@ class CaptionedMusicView: UIView {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setupWithBundle()
-
     }
     
     private func song() {
-                
+        play.stop()
                 if let audioPath = Bundle.main.path(forResource: songName, ofType: "MP3") {
                     do {
                         play = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath))
@@ -60,6 +61,7 @@ class CaptionedMusicView: UIView {
     }
     
     private func setupWithBundle() {
+        
         guard let view = Bundle.main.loadNibNamed("CaptionedMusicView", owner: self)?.first as? UIView else { return }
         addSubview(view)
         view.translatesAutoresizingMaskIntoConstraints = false

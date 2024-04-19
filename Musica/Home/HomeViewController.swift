@@ -1,14 +1,15 @@
 import UIKit
+import AVFoundation
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var captionedSong: CaptionedMusicView!
     
     var songType: SongType = .song
+    var play = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-setSong()
-        // Do any additional setup after loading the view.
+        setSong()
     }
     
     private func setSong() {

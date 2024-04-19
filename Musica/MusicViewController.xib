@@ -66,6 +66,9 @@
                         </stackView>
                         <slider opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6dr-K7-3BG">
                             <rect key="frame" x="-2" y="699" width="397" height="3"/>
+                            <connections>
+                                <action selector="timeSlide:" destination="-1" eventType="valueChanged" id="CG6-95-O2E"/>
+                            </connections>
                         </slider>
                         <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="gGm-20-C42">
                             <rect key="frame" x="0.0" y="709" width="393" height="50"/>
@@ -74,6 +77,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="147.66666666666666" height="50"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" image="backward.end.alt.fill" catalog="system"/>
+                                    <connections>
+                                        <action selector="backClick" destination="-1" eventType="touchUpInside" id="bjK-RF-uG5"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzY-dh-3WP">
                                     <rect key="frame" x="147.66666666666666" y="0.0" width="97.666666666666657" height="50"/>
