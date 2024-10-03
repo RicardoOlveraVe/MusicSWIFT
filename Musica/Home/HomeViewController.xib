@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -10,15 +10,47 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Musica" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="captionedSong" destination="XtW-mc-Eea" id="bQM-4P-YGL"/>
+                <outlet property="view" destination="3cs-XD-w1W" id="ZOO-1l-WfV"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="3cs-XD-w1W">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Q7O-Yc-3m2">
+                    <rect key="frame" x="16" y="91" width="361" height="727"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" text="¿Qué quieres escuchar?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRH-UO-n5R">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Mv9-ud-gSW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gJf-dI-KNN" userLabel="contenedor">
+                            <rect key="frame" x="0.0" y="56" width="361" height="671"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XtW-mc-Eea" customClass="CaptionedMusicView" customModule="Musica" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="671"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Ad8-Tq-fNS"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Ad8-Tq-fNS" firstAttribute="bottom" secondItem="Q7O-Yc-3m2" secondAttribute="bottom" id="C7W-Uo-Yza"/>
+                <constraint firstItem="Q7O-Yc-3m2" firstAttribute="top" secondItem="Ad8-Tq-fNS" secondAttribute="top" constant="32" id="hZj-4Q-EQX"/>
+                <constraint firstItem="Q7O-Yc-3m2" firstAttribute="trailing" secondItem="Ad8-Tq-fNS" secondAttribute="trailing" constant="-16" id="lMH-rU-nYq"/>
+                <constraint firstItem="Q7O-Yc-3m2" firstAttribute="leading" secondItem="Ad8-Tq-fNS" secondAttribute="leading" constant="16" id="oXw-RP-978"/>
+            </constraints>
             <point key="canvasLocation" x="96.946564885496173" y="-11.267605633802818"/>
         </view>
     </objects>

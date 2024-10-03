@@ -77,6 +77,7 @@ class MusicViewController: UIViewController {
         statusPlay = !statusPlay
         if statusPlay == true {
             play.play()
+            startTimer()
             playSong.setImage( UIImage(systemName: "pause.fill") , for: .normal)
         } else{
             play.pause()

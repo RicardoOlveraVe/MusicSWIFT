@@ -18,9 +18,9 @@ class HomeViewController: UIViewController {
         for captionedMusic in captionedSongs {
                     let captionedMusicView = CaptionedMusicView()
             captionedMusicView.captionedMusic = captionedMusic
-                    (captionedSong.superview as? UIStackView)?.addArrangedSubview(captionedMusicView)
+                    (captionedSong?.superview as? UIStackView)?.addArrangedSubview(captionedMusicView)
                 }
-        if let firstSongView = (captionedSong.superview as? UIStackView)?.arrangedSubviews.first as? CaptionedMusicView {
+        if let firstSongView = (captionedSong?.superview as? UIStackView)?.arrangedSubviews.first as? CaptionedMusicView {
             firstSongView.isHidden = true
         }
     }
