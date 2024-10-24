@@ -23,6 +23,16 @@ class MusicViewController: UIViewController {
     override func viewDidLoad() {
         play.stop()
         super.viewDidLoad()
+
+        // Configurar la sesión de audio
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch {
+            print("Error setting audio session category: \(error)")
+        }
+
+        
         captionedMusic()
         play.play()
         startTimer()
