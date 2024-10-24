@@ -2,12 +2,12 @@ import UIKit
 import AVFoundation
 
 class CaptionedMusicView: UIView {
-
+    
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var caption: UILabel!
     @IBOutlet weak var artist: UILabel!
     @IBOutlet weak var btn: UIButton!
-
+    
     var play = AVAudioPlayer()
     
     var duration: Any!
@@ -26,14 +26,14 @@ class CaptionedMusicView: UIView {
             song()
         }
     }
-
+    
     var showCaption: Bool = true {
         didSet {
             caption.isHidden = !showCaption
-
+            
         }
     }
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupWithBundle()
@@ -46,17 +46,17 @@ class CaptionedMusicView: UIView {
     
     private func song() {
         play.stop()
-                if let audioPath = Bundle.main.path(forResource: songName, ofType: "MP3") {
-                    do {
-                        play = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath))
-                        duration = play.duration
-                        play.prepareToPlay()
-                    } catch {
-                        print("Error loading audio file:", error)
-                    }
-                } else {
-                    print("Audio file not found.")
-                }
+        if let audioPath = Bundle.main.path(forResource: songName, ofType: "MP3") {
+            do {
+                play = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath))
+                duration = play.duration
+                play.prepareToPlay()
+            } catch {
+                print("Error loading audio file:", error)
+            }
+        } else {
+            print("Audio file not found.")
+        }
         
     }
     
@@ -72,16 +72,28 @@ class CaptionedMusicView: UIView {
             view.trailingAnchor.constraint(equalTo: trailingAnchor)
         ])
     }
-
+    
     @IBAction func playClick(_ sender: Any){
-        guard let viewController = UIApplication.shared.keyWindow?.rootViewController else {
-                print("Error: No se puede obtener el view controller raíz.")
-                return
-            }
-        let musicViewController = MusicViewController (nibName: nil, bundle: nil)
+        guard let parentViewController = self.parentViewController else {
+            print("Error: No se puede obtener el controlador de vista padre.")
+            return
+        }
+        let musicViewController = MusicViewController(nibName: "MusicViewController", bundle: nil)
+        let musicNavigationController = UINavigationController(rootViewController: musicViewController)
         musicViewController.musicType = typeSong
-        viewController.present(musicViewController, animated: true, completion: nil)
+        parentViewController.present(musicNavigationController, animated: true, completion: nil)
     }
-    
-    
+}
+
+extension UIView {
+    var parentViewController: UIViewController? {
+        var responder: UIResponder? = self
+        while responder != nil {
+            responder = responder?.next
+            if let viewController = responder as? UIViewController {
+                return viewController
+            }
+        }
+        return nil
+    }
 }

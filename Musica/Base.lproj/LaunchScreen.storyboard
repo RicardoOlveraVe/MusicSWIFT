@@ -16,18 +16,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music.quarternote.3" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Oag-hz-Wwh">
-                                <rect key="frame" x="0.0" y="60" width="393" height="757.33333333333337"/>
-                                <color key="tintColor" red="0.012665656399999999" green="0.20701852439999999" blue="0.51278901099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music.note" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="x7w-j3-lRB">
+                                <rect key="frame" x="0.0" y="60" width="393" height="757.66666666666663"/>
+                                <color key="tintColor" red="0.095819868150000001" green="0.33909231420000002" blue="0.50492680069999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Oag-hz-Wwh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="L65-EE-3R0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Oag-hz-Wwh" secondAttribute="bottom" id="Qnf-LJ-xEv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Oag-hz-Wwh" secondAttribute="trailing" id="vSm-Y0-bBC"/>
-                            <constraint firstItem="Oag-hz-Wwh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="w6G-Iv-h6b"/>
+                            <constraint firstItem="x7w-j3-lRB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4ka-UC-o6U"/>
+                            <constraint firstItem="x7w-j3-lRB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CPn-6I-lDN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="x7w-j3-lRB" secondAttribute="bottom" id="FdD-mC-Lbk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x7w-j3-lRB" secondAttribute="trailing" id="S9z-xO-9Bw"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -37,7 +37,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="music.quarternote.3" catalog="system" width="128" height="102"/>
+        <image name="music.note" catalog="system" width="96" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

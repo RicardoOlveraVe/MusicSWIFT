@@ -1,7 +1,7 @@
 import UIKit
 import AVFoundation
 
-class MusicViewController: UIViewController {
+class MusicViewController: UIViewController, AVAudioPlayerDelegate {
     
     @IBOutlet weak var duration: UILabel!
     @IBOutlet weak var resDuration: UILabel!
@@ -23,7 +23,18 @@ class MusicViewController: UIViewController {
     override func viewDidLoad() {
         play.stop()
         super.viewDidLoad()
-
+        sessionAudio()
+        play.delegate = self
+        captionedMusic()
+        startTimer()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        play.stop()
+    }
+    
+    private func sessionAudio() {
         // Configurar la sesión de audio
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
@@ -31,11 +42,6 @@ class MusicViewController: UIViewController {
         } catch {
             print("Error setting audio session category: \(error)")
         }
-
-        
-        captionedMusic()
-        play.play()
-        startTimer()
     }
     
     @objc private func updateTime() {
@@ -54,7 +60,7 @@ class MusicViewController: UIViewController {
         playSong.setImage( UIImage(systemName: "pause.fill") , for: .normal)
         song()
         slideDuration.maximumValue = Float(durationSong)
-        
+        play.play()
     }
     
     private func song() {
@@ -63,6 +69,7 @@ class MusicViewController: UIViewController {
             do {
                 play = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath))
                 durationSong = play.duration
+                play.delegate = self
                 play.prepareToPlay()
                 let minutes = Int(durationSong) / 60
                 let seconds = Int(durationSong) % 60
@@ -81,8 +88,6 @@ class MusicViewController: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
     }
     
-    
-    
     @IBAction func stopClick() {
         statusPlay = !statusPlay
         if statusPlay == true {
@@ -97,6 +102,19 @@ class MusicViewController: UIViewController {
     
     @IBAction func nextClick() {
         play.stop()
+        songNext()
+    }
+    
+    @IBAction func backClick() {
+        play.stop()
+        songBack()
+    }
+    
+    @IBAction func timeSlide(_ sender: UISlider) {
+        play.currentTime = TimeInterval(Float(sender.value))
+    }
+    
+    private func songNext() {
         if musicType == .ellaSeFue{
             musicType = .agarrala
         }else if musicType == .agarrala{
@@ -109,11 +127,9 @@ class MusicViewController: UIViewController {
             musicType = .ellaSeFue
         }
         captionedMusic()
-        play.play()
     }
     
-    @IBAction func backClick() {
-        play.stop()
+    private func songBack() {
         if musicType == .ellaSeFue{
             musicType = .morire
         }else if musicType == .morire{
@@ -126,15 +142,11 @@ class MusicViewController: UIViewController {
             musicType = .ellaSeFue
         }
         captionedMusic()
-        play.play()
     }
     
-    @IBAction func timeSlide(_ sender: UISlider) {
-        play.currentTime = TimeInterval(Float(sender.value))
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        play.stop()
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        if flag {
+            songNext()
+        }
     }
 }
